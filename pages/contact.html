@@ -22,31 +22,51 @@
 
 </head>
 
-<body>
+<body class="contact-page">
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="../assets/images/logo.png"></a>
+    <div class="header-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../assets/images/logo.png"></a>
+            </div>
+            <div class="navMiddle">
+                <li><a class="active" href="../index.html">Home</a></li>
+                <li><a href="../pages/flights.html">Flights</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart" alt="Cart"></i>
+                    <div class="cart-badge">2</div>
+                </div>
+            </div>
+        </nav>
+        <div class="header-banner">
+            <div class="header-text">
+                <h4>CONTACT US</h4>
+            </div>
         </div>
-        <div class="navMiddle">
-            <li><a class="active" href="../index.html">Home</a></li>
-            <li><a href="../pages/flights.html">Flights</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-        </div>
-        <div class="search-bar">
-            <button>Go</button>
-            <input type="text" placeholder="Search...">
-        </div>
-    </nav>
+    </div>
     <!-- Company Introduction -->
-    <section class="container text-center mt-4">
-        <h2>Welcome to Red Planet Ventures</h2>
-        <p>
-            We are dedicated to turning dreams of interplanetary exploration into exhilarating realities. 
-            From the rugged terrain of Mars to the majestic rings of Saturn, we craft unforgettable space journeys.
-            With safety, innovation, and customer satisfaction at our core, we invite you to embark on an adventure like no other.
-        </p>
+
+    <section class="shuttles bg-light">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="shuttle-text">
+                    <h1 class="our-shuttles-text">ABOUT</h1>
+                    <h2 class="travel-style-text">RED PLANET VENTURES</h2>
+                    <p>Welcome to Red Planet Ventures, where we are dedicated to turning dreams of interplanetary exploration into exhilarating realities. As a premier provider of space tourism experiences, we specialize in crafting meticulously curated journeys to the diverse planets within our solar system. From the rugged terrain of Mars to the majestic rings of Saturn, our expertly designed trips offer unparalleled opportunities for discovery and adventure. With a commitment to safety, innovation, and customer satisfaction, we strive to exceed expectations and leave a lasting impression on every traveler who embarks on a voyage with us. Join us as we push the boundaries of exploration and unlock the mysteries of the cosmos with Red Planet Ventures.</p>
+                </div> 
+            </div>  
+
+            <div class="col-md-6">
+                <img src="../assets/images/contactImage.png" alt="Various space shuttles" class="img-fluid">
+            </div>
+        </div>
+    
     </section>
+
 
     <!-- Contact Section -->
     <section class="container mt-5">
@@ -92,11 +112,11 @@
  <!-- Footer -->
 
  <footer class="footer">
-    <section class="shuttles bg-light">
+    <section class="shuttles">
         <div class="footer-container">
             <div class="footer-columns">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+                    <a href="index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
                     <p>Offering unforgettable trips to explore planets in our solar system.</p>
                 </div>
 
@@ -112,10 +132,10 @@
                 <div class="social-links">
                     <h3>Social Media</h3>
                     <div class="social-icons">
-                        <a href="#"><img src="./assets/images/smFacebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="./assets/images/smInstagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="./assets/images/smTicktock.png" alt="TikTok"></a>
-                        <a href="#"><img src="./assets/images/smX.png" alt="Twitter"></a>
+                        <a href="#"><img src="../assets/images/smFacebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="../assets/images/smInstagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="../assets/images/smTicktock.png" alt="TikTok"></a>
+                        <a href="#"><img src="../assets/images/smX.png" alt="Twitter"></a>
                     </div>
                 </div>
             </div>
@@ -133,6 +153,7 @@
     </section>
 </footer>
 
+<script src="https://kit.fontawesome.com/900fc3b7f3.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

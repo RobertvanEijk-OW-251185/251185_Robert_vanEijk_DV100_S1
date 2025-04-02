@@ -22,27 +22,37 @@
 
 </head>
 
-<body>
+<body class="flights-page">
+
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="../assets/images/logo.png"></a>
-        </div>
-        <div class="navMiddle">
-            <li><a class="active" href="../index.html">Home</a></li>
+    <div class="header-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../assets/images/logo.png"></a>
+            </div>
+            <div class="navMiddle">
+                <li><a class="active" href="../index.html">Home</a></li>
                 <li><a href="../pages/flights.html">Flights</a></li>
                 <li><a href="../pages/contact.html">Contact</a></li>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart" alt="Cart"></i>
+                    <div class="cart-badge">2</div>
+                </div>
+            </div>
+        </nav>
+        <div class="header-banner">
+            <div class="header-text">
+                <h4>BOOK A FLIGHT</h4>
+            </div>
         </div>
-        <div class="search-bar">
-            <button>Go</button>
-            <input type="text" placeholder="Search...">
-        </div>
-    </nav>
-
+    </div>
     <!-- Filter Section -->
     <div class="container mt-4">
         <div class="row">
-            <div class="col-md-6">
+            <div class="filter-section col-md-6">
                 <p>Showing 1–16 of 32 results</p>
             </div>
             <div class="col-md-6 text-end">
@@ -55,109 +65,158 @@
         </div>
     </div>
 
-    <!-- Flights List -->
-    <div class="container mt-4">
-        <div class="row g-4">
-            <!-- Mars -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="mars.jpg" class="card-img-top" alt="Mars">
-                    <div class="card-body">
-                        <h5 class="card-title">The Classic Mars Experience</h5>
-                        <p class="price"><s>R50,000.00</s> <strong>R25,000.00</strong></p>
-                        <p>Embark on a Mars vacation: red deserts, ancient relics, and towering canyons await.</p>
-                        <p><strong>Shuttle:</strong> The Opulence</p>
-                        <p><strong>Date:</strong> 16 June - 19 July</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Neptune -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="neptune.jpg" class="card-img-top" alt="Neptune">
-                    <div class="card-body">
-                        <h5 class="card-title">Neptune’s Cosmic Dive</h5>
-                        <p class="price"><strong>R45,000.00</strong></p>
-                        <p>Embark on a voyage to Neptune aboard the "Neptune Voyager." Weightlessness, frigid oceans, and celestial wonders await.</p>
-                        <p><strong>Shuttle:</strong> The Voyager</p>
-                        <p><strong>Date:</strong> 4 April - 28 March</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
+<!-- Flights  -->
 
-            <!-- Jupiter -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="jupiter.jpg" class="card-img-top" alt="Jupiter">
-                    <div class="card-body">
-                        <h5 class="card-title">The Giant’s Journey</h5>
-                        <p class="price"><strong>R65,000.00</strong></p>
-                        <p>Witness Jupiter’s majestic storms and explore its moons on the "Jupiter Odyssey."</p>
-                        <p><strong>Shuttle:</strong> The Odyssey</p>
-                        <p><strong>Date:</strong> 15 June - 30 July</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Saturn -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="saturn.jpg" class="card-img-top" alt="Saturn">
-                    <div class="card-body">
-                        <h5 class="card-title">Ring Around a Saturn</h5>
-                        <p class="price"><strong>R40,000.00</strong></p>
-                        <p>Explore Saturn's rings, moons, and diverse landscapes with the "Saturn Explorer."</p>
-                        <p><strong>Shuttle:</strong> The Explorer</p>
-                        <p><strong>Date:</strong> 4 April - 28 March</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Uranus -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="uranus.jpg" class="card-img-top" alt="Uranus">
-                    <div class="card-body">
-                        <h5 class="card-title">Uranus Uncharted</h5>
-                        <p class="price"><strong>R50,000.00</strong></p>
-                        <p>Explore Uranus’ icy atmosphere and captivating moons with "Uranus Unveiled."</p>
-                        <p><strong>Shuttle:</strong> The Endeavor</p>
-                        <p><strong>Date:</strong> 16 May - 19 July</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Moon -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="moon.jpg" class="card-img-top" alt="Moon">
-                    <div class="card-body">
-                        <h5 class="card-title">Moonlight Meander</h5>
-                        <p class="price"><strong>R15,000.00</strong></p>
-                        <p>Enjoy a lunar getaway aboard the "Celestial Cruiser" with breathtaking Earthrise views.</p>
-                        <p><strong>Shuttle:</strong> The Voyager</p>
-                        <p><strong>Date:</strong> 5 August - 12 August</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
+<section class="flights-list-section135">
+    <div class="row align-items-center">
+        <div class="flights-pictures col-md-6">
+            <img src="../assets/images/flighhtMars.png" class="card-img" alt="Mars">
         </div>
+        <div class="col-md-6">
+            <div class="flights-list-info">
+                <h5 class="title135">The Classic Mars Experience</h5>
+                <p class="price135"><s>R50,000.00</s> <strong>R25,000.00</strong></p>
+                <p>Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its
+                    majestic storms and swirling atmosphere. Dive into metallic hydrogen
+                    oceans. Explore its moons, each a world unto itself. Engage in gravity
+                    surfing, comet chasing, and space excursions. Experience cosmic wonder
+                    in luxury, blending exploration with adventure.</p>
+                <p><strong>Shuttle:</strong> The Opulence</p>
+                <p><strong>Date:</strong> 16 June - 19 July</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div> 
+            <div class="divider"></div>
+        </div>  
     </div>
+</section>
+
+<section class="flights-list-section246">
+    <div class="row align-items-center">
+        <div class="flights-pictures col-md-6">
+            <img src="../assets/images/flightNeptune.png" class="card-img" alt="Mars">
+        </div>
+        <div class="col-md-6">
+            <div class="flights-list-info">
+                <h5 class="title135">Neptune’s Cosmic Dive</h5>
+                <p class="price135"><strong>R45,000.00</strong></p>
+                <p>Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness
+                    surreal vistas of swirling clouds and rings. Experience weightlessness and
+                    explore frigid oceans. Engage in thrilling spacewalks, observe celestial
+                    phenomena, and savor gourmet space cuisine. An unforgettable
+                    adventure awaits, blending luxury with cosmic exploration.</p>
+                <p><strong>Shuttle:</strong> The Opulence</p>
+                <p><strong>Date:</strong> 16 June - 19 July</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div> 
+            <div class="divider"></div>
+        </div>  
+    </div>
+</section>
+
+<section class="flights-list-section135">
+    <div class="row align-items-center">
+        <div class="flights-pictures col-md-6">
+            <img src="../assets/images/flightJupiter.png" class="card-img" alt="Mars">
+        </div>
+        <div class="col-md-6">
+            <div class="flights-list-info">
+                <h5 class="title135">The Giant’s Journey</h5>
+                <p class="price135"><strong>R65,000.00</strong></p>
+                <p>Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its
+                    majestic storms and swirling atmosphere. Dive into metallic hydrogen
+                    oceans. Explore its moons, each a world unto itself. Engage in gravity
+                    surfing, comet chasing, and space excursions. Experience cosmic wonder
+                    in luxury, blending exploration with adventure.</p>
+                <p><strong>Shuttle:</strong> The Opulence</p>
+                <p><strong>Date:</strong> 16 June - 19 July</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div> 
+            <div class="divider"></div>
+        </div>  
+    </div>
+</section>
+
+<section class="flights-list-section246">
+    <div class="row align-items-center">
+        <div class="flights-pictures col-md-6">
+            <img src="../assets/images/flightSaturn.png" class="card-img" alt="Mars">
+        </div>
+        <div class="col-md-6">
+            <div class="flights-list-info">
+                <h6 class="title246">Ring Around a Saturn</h6>
+                <p class="price246"><strong>R40,000.00</strong></p>
+                <p>Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer."
+                    Marvel at its iconic rings and turbulent storms. Explore its diverse moons,
+                    from icy Enceladus to mysterious Titan, with activities including rover
+                    expeditions and cave exploration. Experience the wonders of the cosmos
+                    amidst luxurious accommodations, where the thrill of discovery
+                    intertwines seamlessly with the excitement of adventure.</p>
+                <p><strong>Shuttle:</strong> The Opulence</p>
+                <p><strong>Date:</strong> 16 June - 19 July</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div> 
+            <div class="divider"></div>
+        </div>  
+    </div>
+</section>
+
+<section class="flights-list-section135">
+    <div class="row align-items-center">
+        <div class="flights-pictures col-md-6">
+            <img src="../assets/images/flightUranus.png" class="card-img" alt="Mars">
+        </div>
+        <div class="col-md-6">
+            <div class="flights-list-info">
+                <h5 class="title135">Uranus Uncharted</h5>
+                <p class="price135"><strong>R50,000.00</strong></p>
+                <p>Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour.
+                    Explore its icy atmosphere and captivating moons. Experience thrilling
+                    zero-gravity excursions, witness mesmerizing auroras, and immerse
+                    yourself in celestial photography workshops. With luxury
+                    accommodations and expert guides, discover the wonders of Uranus in a
+                    journey of a lifetime.</p>
+                <p><strong>Shuttle:</strong> The Opulence</p>
+                <p><strong>Date:</strong> 16 June - 19 July</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div> 
+            <div class="divider"></div>
+        </div>  
+    </div>
+</section>
+
+<section class="flights-list-section246">
+    <div class="row align-items-center">
+        <div class="flights-pictures col-md-6">
+            <img src="../assets/images/flightMoon.png" class="card-img" alt="Mars">
+        </div>
+        <div class="col-md-6">
+            <div class="flights-list-info">
+                <h6 class="title246">Moonlight Meander</h6>
+                <p class="price246"><strong>R15,000.00</strong></p>
+                <p>Experience the ultimate lunar getaway with our "Moonlight Meander"
+                    package. Depart Earth's atmosphere aboard the "Celestial Cruiser" for a
+                    short but unforgettable journey to the Moon. Enjoy lunar walks,
+                    breathtaking views of Earthrise, and stargazing under the moon's serene
+                    glow. Immerse yourself in luxury accommodations amidst the tranquility
+                    of space.</p>
+                <p><strong>Shuttle:</strong> The Opulence</p>
+                <p><strong>Date:</strong> 16 June - 19 July</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div> 
+            <div class="divider"></div>
+        </div>  
+    </div>
+</section>
 
  <!-- Footer -->
 
  <footer class="footer">
-    <section class="shuttles bg-light">
+    <section class="shuttles">
         <div class="footer-container">
             <div class="footer-columns">
                 <div class="footer-logo">
-                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+                    <a href="index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
                     <p>Offering unforgettable trips to explore planets in our solar system.</p>
                 </div>
 
@@ -173,10 +232,10 @@
                 <div class="social-links">
                     <h3>Social Media</h3>
                     <div class="social-icons">
-                        <a href="#"><img src="./assets/images/smFacebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="./assets/images/smInstagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="./assets/images/smTicktock.png" alt="TikTok"></a>
-                        <a href="#"><img src="./assets/images/smX.png" alt="Twitter"></a>
+                        <a href="#"><img src="../assets/images/smFacebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="../assets/images/smInstagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="../assets/images/smTicktock.png" alt="TikTok"></a>
+                        <a href="#"><img src="../assets/images/smX.png" alt="Twitter"></a>
                     </div>
                 </div>
             </div>
@@ -194,6 +253,8 @@
     </section>
 </footer>
 
+<script src="https://kit.fontawesome.com/900fc3b7f3.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

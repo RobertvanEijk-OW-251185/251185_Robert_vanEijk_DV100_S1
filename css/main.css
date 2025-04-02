@@ -18,13 +18,21 @@
         font-style: normal;
     }
 
-        /*Porter Sans Block*/
-        @font-face {
-            font-family: 'PorterSansBlock';
-            src: url('../assets/fonts/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+    /* Poller One Font Link */
+    .poller-one-regular {
+        font-family: "Poller One", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+
+    /*Porter Sans Block*/
+    @font-face {
+        font-family: 'PorterSansBlock';
+        src: url('../assets/fonts/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 
     /* Home */
@@ -33,13 +41,12 @@
 
         body {
             margin: 0;
-            height: 100vh;
+            height: 10vh;
             background-image: url(../assets/images/homePageHeader.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
-
             background-color: #45016d;
         }
 
@@ -63,14 +70,14 @@
     }
     .logo img {
         height: 40px;
-        padding-left: 40px;
+        margin-left: 4%;
     }
     .navbar {
         display: flex;
         gap: 20px;
     }
     .navbar a {
-        color: rgb(0, 0, 0);
+        color: rgb(99, 99, 99);
         text-decoration: none;
         padding: 10px 20px;
     }
@@ -81,24 +88,55 @@
 
         font-family: "Poppins", sans-serif;
     }
+    
+
     .search-bar {
         display: flex;
         align-items: center;
+        background: #ffffffb5;
+        border-radius: 10px;
+        padding: 10px 15px;
+        gap: 10px;
+        position: relative;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-right: 3%;
     }
+
     .search-bar input {
-        padding: 5px;
         border: none;
-        border-radius: 5px;
+        outline: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        flex: 1;
+        background: transparent;
     }
-    .search-bar button {
-        padding: 5px 10px;
-        border: none;
-        background-color: #575757;
-        color: white;
+
+    .search-bar .cart-icon {
+        position: relative;
         cursor: pointer;
-        border-radius: 5px;
-        margin-left: 5px;
     }
+
+    .search-bar .cart-icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .search-bar .cart-icon .cart-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: red;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     @media (max-width: 600px) {
         .menu {
             flex-direction: column;
@@ -126,7 +164,7 @@
 
     .head-words2 {
         
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poller One", serif;
         font-size: 1rem;
         color: #7700ff;
         text-align: left;
@@ -208,7 +246,7 @@
         border: none;
     }
 
-    /* Our Shuttle */
+    /* Our Shuttles */
     .shuttle-background {
         background-color: #ffffff;
         width: 100%;
@@ -397,19 +435,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
     /* Flights */
 
-    body {
-        font-family: Arial, sans-serif;
+    .flights-page {
+        background-color: #45016d;
+        background-image: none;
     }
 
     .card img {
@@ -426,10 +456,121 @@
         width: 100%;
     }
 
+    .header-banner {
+        background-image: url("../assets/images/headerbackBack.png");         background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        height: 33vh; 
+        width: 100%;
+    }
+
+
+    .header-container {
+        position: relative;
+        width: 100%;
+    }
+
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        z-index: 10; 
+        background: rgba(255, 255, 255, 0.7); 
+        padding: 15px;
+    }
+
+
+    .header-banner {
+        position: relative;
+        background-image: url('../assets/images/headerbackBack.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .filter-section {
+        color:#fff;
+    }
+
+
+    h4 {
+        font-family: 'PorterSansBlock', sans-serif;
+        font-size: 3.5rem;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 10%;
+        width: 100%;
+    }
+
+
+    .flights-pictures {
+        width: 609px;
+        height: 649px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flights-pictures img {
+        width: 609px;
+        height: 649px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .flights-list-section135 {
+        background-color: #ffffff;
+        padding: 5%;
+    }
+
+    .title135 {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .flights-list-section246 {
+        background-color: #45016d;
+        color: #ffffff;
+        padding: 5%;
+    }
+
+    .title246 {
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+    }
+
+    .price135 {
+        font-family: "Poppins", sans-serif;
+        color: #858585;
+    }
+    
+    .price246 {
+        font-family: "Poppins", sans-serif;
+        color: #55daeb;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* Contact */
 
-    body {
-        font-family: Arial, sans-serif;
+    .contact-page {
+        background-image: url(../assets/images/headerbackBack.png);
     }
 
     h2 {
