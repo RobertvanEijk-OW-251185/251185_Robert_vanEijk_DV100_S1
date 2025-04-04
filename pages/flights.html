@@ -36,7 +36,7 @@
                 <li><a href="../pages/contact.html">Contact</a></li>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search"> |
                 <div class="cart-icon">
                     <i class="fas fa-shopping-cart" alt="Cart"></i>
                     <div class="cart-badge">2</div>
@@ -49,25 +49,27 @@
             </div>
         </div>
     </div>
+
     <!-- Filter Section -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="filter-section col-md-6">
-                <p>Showing 1–16 of 32 results</p>
-            </div>
-            <div class="col-md-6 text-end">
-                <select class="form-select">
-                    <option>Show 6</option>
-                    <option>Show 12</option>
-                    <option>Show 16</option>
-                </select>
-            </div>
+    <div class="filter-bar">
+        <div class="filter-left">
+            <button class="filter-btn"><i class="fas fa-sliders-h"></i> Filter</button>
+            <button class="grid-btn"><i class="fas fa-th"></i></button>
+            <button class="list-btn active"><i class="fas fa-bars"></i></button>
+            <span class="divider filter-bar-divider"></span>
+            <span class="results-text">Showing 1–16 of 32 results</span>
+        </div>
+        <div class="filter-right">
+            <span>Show</span>
+            <button class="show-count">6</button>
+            <span>Sort by</span>
+            <select class="sort-dropdown">
+                <option>Default</option>
+            </select>
         </div>
     </div>
-
-
+    
 <!-- Flights  -->
-
 <section class="flights-list-section135">
     <div class="row align-items-center">
         <div class="flights-pictures col-md-6">
@@ -84,6 +86,11 @@
                     in luxury, blending exploration with adventure.</p>
                 <p><strong>Shuttle:</strong> The Opulence</p>
                 <p><strong>Date:</strong> 16 June - 19 July</p>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">-</button>
+                    <button type="button" class="btn btn-warning">1</button>
+                    <button type="button" class="btn btn-success">+</button>
+                </div>
                 <a href="#" class="btn btn-primary">Book Now</a>
             </div> 
             <div class="divider"></div>
@@ -107,6 +114,11 @@
                     adventure awaits, blending luxury with cosmic exploration.</p>
                 <p><strong>Shuttle:</strong> The Opulence</p>
                 <p><strong>Date:</strong> 16 June - 19 July</p>
+                <div class="btn-group counter-button" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">-</button>
+                    <button type="button" class="btn btn-warning">1</button>
+                    <button type="button" class="btn btn-success">+</button>
+                </div>
                 <a href="#" class="btn btn-primary">Book Now</a>
             </div> 
             <div class="divider"></div>
@@ -130,6 +142,11 @@
                     in luxury, blending exploration with adventure.</p>
                 <p><strong>Shuttle:</strong> The Opulence</p>
                 <p><strong>Date:</strong> 16 June - 19 July</p>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">-</button>
+                    <button type="button" class="btn btn-warning">1</button>
+                    <button type="button" class="btn btn-success">+</button>
+                </div>
                 <a href="#" class="btn btn-primary">Book Now</a>
             </div> 
             <div class="divider"></div>
@@ -154,6 +171,11 @@
                     intertwines seamlessly with the excitement of adventure.</p>
                 <p><strong>Shuttle:</strong> The Opulence</p>
                 <p><strong>Date:</strong> 16 June - 19 July</p>
+                <div class="btn-group counter-button" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">-</button>
+                    <button type="button" class="btn btn-warning">1</button>
+                    <button type="button" class="btn btn-success">+</button>
+                </div>
                 <a href="#" class="btn btn-primary">Book Now</a>
             </div> 
             <div class="divider"></div>
@@ -178,6 +200,11 @@
                     journey of a lifetime.</p>
                 <p><strong>Shuttle:</strong> The Opulence</p>
                 <p><strong>Date:</strong> 16 June - 19 July</p>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">-</button>
+                    <button type="button" class="btn btn-warning">1</button>
+                    <button type="button" class="btn btn-success">+</button>
+                </div>
                 <a href="#" class="btn btn-primary">Book Now</a>
             </div> 
             <div class="divider"></div>
@@ -202,9 +229,21 @@
                     of space.</p>
                 <p><strong>Shuttle:</strong> The Opulence</p>
                 <p><strong>Date:</strong> 16 June - 19 July</p>
+                <div class="btn-group counter-button" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">-</button>
+                    <button type="button" class="btn btn-warning">1</button>
+                    <button type="button" class="btn btn-success">+</button>
+                </div>
                 <a href="#" class="btn btn-primary">Book Now</a>
             </div> 
             <div class="divider"></div>
+            <!-- <div class="extra-info">
+                <ol>
+                    <li><strong>Destination:</strong> SKU :SS001</li>
+                    <li><strong>Duration:</strong> 3 Days</li>
+                    <li><strong>Activities:</strong> Lunar Walks, Earthrise Viewing, Stargazing</li>
+                    <li><strong>Accommodation:</strong> Luxury Space Hotel</li>
+            </div> -->
         </div>  
     </div>
 </section>
@@ -232,10 +271,11 @@
                 <div class="social-links">
                     <h3>Social Media</h3>
                     <div class="social-icons">
-                        <a href="#"><img src="../assets/images/smFacebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="../assets/images/smInstagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="../assets/images/smTicktock.png" alt="TikTok"></a>
-                        <a href="#"><img src="../assets/images/smX.png" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/theopenwindow/"><img src="../assets/images/smFacebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><img src="../assets/images/smInstagram.png" alt="Instagram"></a>
+                        <a href="https://www.tiktok.com/@open_window_"><img src="../assets/images/smTicktock.png" alt="TikTok"></a>
+                        <a href="https://twitter.com/open_window_
+                        "><img src="../assets/images/smX.png" alt="X"></a>
                     </div>
                 </div>
             </div>
