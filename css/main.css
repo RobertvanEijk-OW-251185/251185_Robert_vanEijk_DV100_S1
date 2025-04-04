@@ -4,18 +4,21 @@
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 18px;
     }
     
     .poppins-medium {
         font-family: "Poppins-medium", sans-serif;
         font-weight: 500;
         font-style: normal;
+        font-size: 18px;
     }
     
     .poppins-bold {
         font-family: "Poppins-bold", sans-serif;
         font-weight: 700;
         font-style: normal;
+        font-size: 48px;
     }
 
     /* Poller One Font Link */
@@ -23,10 +26,10 @@
         font-family: "Poller One", serif;
         font-weight: 400;
         font-style: normal;
-      }
+    }
       
 
-    /*Porter Sans Block*/
+    /*Porter Sans Block Font Link*/
     @font-face {
         font-family: 'PorterSansBlock';
         src: url('../assets/fonts/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff');
@@ -37,18 +40,18 @@
 
     /* Home */
 
-        /*Navbar*/
+    /*Navbar*/
 
-        body {
-            margin: 0;
-            height: 10vh;
-            background-image: url(../assets/images/homePageHeader.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-            background-color: #45016d;
-        }
+    body {
+        margin: 0;
+        height: 10vh;
+        background-image: url(../assets/images/homePageHeader.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        background-color: #45016d;
+    }
 
     * {
         margin: 0;
@@ -109,6 +112,7 @@
         font-size: 16px;
         flex: 1;
         background: transparent;
+        margin-right: 10px; 
     }
 
     .search-bar .cart-icon {
@@ -135,6 +139,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .navbar a:hover, a:active {
+        text-decoration: underline;
+    }
+
+    .active, a.active{
+        text-decoration: underline;
+        color: #e51728;
     }
 
     @media (max-width: 600px) {
@@ -165,8 +178,8 @@
     .head-words2 {
         
         font-family: "Poller One", serif;
-        font-size: 1rem;
-        color: #7700ff;
+        font-size: 18px;
+        color: #45016d;
         text-align: left;
         padding-left: 10%;
         width: 100%;
@@ -213,19 +226,26 @@
     }
 
     .booking-section {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
         width: 70%;
         text-align: left!important;
     }
 
     h1 {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins-medium", sans-serif;
+        font-weight: 500;
+        font-style: normal;
         font-size: 18px;
-        margin-bottom: 20px;
         color: #55daeb;
     }
 
     h2 {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins-bold", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 48px;
         margin-bottom: 20px;
         color: #ffffff;
@@ -242,8 +262,9 @@
     .btn {
         background-color: #e51728;
         padding: 20px;
-        width: 50%!important;
+        width: 30%!important;
         border: none;
+        border-radius: 12px;
     }
 
     /* Our Shuttles */
@@ -258,6 +279,10 @@
     }
 
     .shuttle-text {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
         margin-left: 10%;
         width: 70%;
     }
@@ -268,16 +293,19 @@
     }
 
     .shuttles h1 {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins-medium", sans-serif;
+        font-weight: 500;
+        font-style: normal;
         font-size: 18px;
         margin-bottom: 20px;
         color: #55daeb!important;
     }
 
     .shuttles h2 {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins-bold", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 48px;
-        margin-bottom: 20px;
         color:#45016d;
     }
 
@@ -287,6 +315,14 @@
         color: #ffffff;
         text-align: center;
     }
+
+    .card-info {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+    }
+
     
     #contact{
         width: 100%;
@@ -314,124 +350,132 @@
         margin-top: 2%;
     }
 
-/* Footer */
+    /* Footer */
 
-.footer {
-    background-color: #fff;
-    background-size: cover;
-    color: #333;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    padding: 40px 0;
-}
+    .footer-text {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color:rgb(125, 125, 125)
+    }
 
-.footer-middle {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-}
+    .footer {
+        background-color: #fff;
+        background-size: cover;
+        color: #707070;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        padding: 40px 0;
+    }
 
-.footer-container {
-    margin: 0 auto;
-}
+    .footer-middle {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
 
-.footer-columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-    gap: 40px;
-}
+    .footer-container {
+        margin: 0 auto;
+    }
 
-
-.footer-logo, .footer-middle, .social-links {
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer-logo img {
-    width: 266px;
-    height: 48px;
-}
-
-.footer-logo p {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.footer-middle ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-middle h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-middle li {
-    margin-bottom: 10px;
-}
-
-.footer-middle a {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-middle a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a img {
-    width: 77px;
-    height: 77px;
-}
-
-.divider {
-    height: 1px;
-    background-color: #ccc;
-    width: 100%;
-    margin: 20px 0;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: #666;
-    width: 100%;
-}
-
-.footer-links a {
-    color: #666;
-    text-decoration: none;
-    margin-left: 15px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
     .footer-columns {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        gap: 40px;
+    }
+
+
+    .footer-logo, .footer-middle, .social-links {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer-logo img {
+        width: 266px;
+        height: 48px;
+    }
+
+    .footer-logo p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .footer-middle ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-middle h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-middle li {
+        margin-bottom: 10px;
+    }
+
+    .footer-middle a {
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .footer-middle a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icons a img {
+        width: 77px;
+        height: 77px;
+    }
+
+    .divider {
+        height: 1px;
+        background-color: #ccc;
+        width: 100%;
+        margin: 20px 0;
     }
 
     .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: #666;
+        width: 100%;
     }
-}
+
+    .footer-links a {
+        color: #666;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .footer-columns {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+    }
 
 
 
@@ -440,6 +484,12 @@
     .flights-page {
         background-color: #45016d;
         background-image: none;
+    }
+
+    .flight-extra-info {
+        list-style-type: none;
+        color: #808080;
+        margin-left: 2%;
     }
 
     .card img {
@@ -598,6 +648,7 @@
 
     .title135 {
         font-family: "Poppins", sans-serif;
+        color: black;
     }
 
     .flights-list-section246 {
@@ -622,37 +673,28 @@
     }
 
     
-.btn-group .btn {
-    background-color: #45016d;
-    border-color: #45016d;
-    color: white;
-}
+    .btn-group .btn {
+        background-color: #45016d;
+        border-color: #45016d;
+        color: white;
+    }
 
-.counter-button .btn {
-    background-color: #55daeb;
-    border-color: #55daeb;
-    color: white;
-}
+    .counter-button .btn {
+        background-color: #55daeb;
+        border-color: #55daeb;
+        color: white;
+    }
 
-.btn-group .btn:hover {
-    color: #cacaca;
-}
-
-
-
-
-
-
-
-
-
-
+    .btn-group .btn:hover {
+        color: #cacaca;
+    }
 
 
     /* Contact */
 
     .contact-page {
         background-image: url(../assets/images/headerbackBack.png);
+        background-color: #ffffff;
     }
 
     h2 {
@@ -669,4 +711,161 @@
 
     ul li {
         margin-bottom: 10px;
+    }
+
+    .social-media-pages {
+        font-family: "Poppins-bold", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 48px;
+        color: #45016d;
+    }
+
+
+    .contact-section {
+        padding: 5% 0;
+        background-color: #fff;
+    }
+
+    .left-contact-column {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-us {
+        padding: 0 20px;
+        margin-left: 15%;
+    }
+
+    .map-title-sub {
+        font-family: "Poppins-medium", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 18px;
+        color: #55daeb!important;
+    }
+
+    .map-title {
+        font-family: "Poppins-bold", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 48px;
+        color: #45016d;
+    }
+
+    .map-container {
+        width: 607px;
+        height: 534px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        margin-left: 15%;
+    }
+
+    .map-header {
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    .map-title-sub {
+        font-family: "Poppins", sans-serif;
+        color: #45016d;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .map-title {
+        font-family: "Poppins", sans-serif;
+        color: #45016d;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .contact-form-container {
+        width: 609px;
+        height: 950px;
+        position: relative;
+    }
+
+    .contact-form {
+        background-image: url('../assets/images/formBack.png');
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+        border-radius: 45px;
+        color: #ffffff;
+        height: 100%;
+    }
+
+    .contact-form input {
+        width: 100%;
+        height: 75px;
+        border-radius: 15px;
+    }
+
+    .contact-form textarea {
+        width: 100%;
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    .contact-form h3 {
+        color: #ffffff;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .contact-form .form-control {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(127, 127, 127);
+        margin-bottom: 20px;
+    }
+
+    .contact-form .form-control::placeholder {
+        color: rgb(125, 125, 125);
+    }
+
+    contact-form .btn-primary {
+        background-color: #e51728;
+        border: none;
+        padding: 12px;
+        margin-top: 20px;
+        font-weight: 500;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+        .map-container,
+        .contact-form-container {
+            width: 100%;
+            max-width: 607px;
+        }
+        
+        .contact-form-container {
+            height: auto;
+            min-height: 649px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .left-contact-column {
+            margin-bottom: 40px;
+        }
+        
+        .map-container {
+            height: 400px;
+        }
     }

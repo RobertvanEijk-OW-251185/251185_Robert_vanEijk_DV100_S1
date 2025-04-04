@@ -30,15 +30,18 @@
                 <a href="index.html"><img src="../assets/images/logo.png"></a>
             </div>
             <div class="navMiddle">
-                <li><a class="active" href="../index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/flights.html">Flights</a></li>
-                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a class="active" href="../pages/contact.html">Contact</a></li>
             </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search"> |
-                <div class="cart-icon">
-                    <i class="fas fa-shopping-cart" alt="Cart"></i>
-                    <div class="cart-badge">2</div>
+            <div>
+                <div class="search-bar">
+                    <i class="fas fa-search" alt="search"></i>    
+                    <input type="text" placeholder="Search"> |
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart" alt="Cart"></i>
+                        <div class="cart-badge">2</div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -50,7 +53,7 @@
     </div>
     <!-- Company Introduction -->
 
-    <section class="shuttles bg-light">
+    <section class="shuttles">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="shuttle-text">
@@ -68,46 +71,64 @@
     </section>
 
 
-    <!-- Contact Section -->
-    <section class="container mt-5">
-        <div class="row">
-            <!-- Contact Form -->
-            <div class="col-md-6">
-                <h3>Send Us a Message</h3>
-                <form>
+
+ <!-- Contact Section -->
+<section class="contact-section">
+    <div class="row">
+        <div class="col-md-6 left-contact-column">
+
+            <section class="contact-us">
+                <h1>CONTACT US THROUGH OUR</h1>
+                <h2 class="social-media-pages">SOCIAL MEDIA PAGES</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/theopenwindow/"><img src="../assets/images/smFacebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><img src="../assets/images/smInstagram.png" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@open_window_"><img src="../assets/images/smTicktock.png" alt="TikTok"></a>
+                    <a href="https://twitter.com/open_window_"><img src="../assets/images/smX.png" alt="X"></a>
+                </div>
+            </section>
+
+            <div class="map-header">
+                <h1 class="map-title-sub">OR VISIT US AT</h1>
+                <h2 class="map-title">Physical Location</h2>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.884685394281!2d28.20846111265648!3d-25.89190404184441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1743763859280!5m2!1sen!2sza" 
+                    width="607" height="534" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="contact-form-container">                        
+                <form class="contact-form">
+                    <h2>SEND US A MESSAGE</h2>
                     <div class="mb-3">
                         <label class="form-label">Your Name</label>
                         <input type="text" class="form-control" placeholder="Enter your name">
                     </div>
+                </br>
                     <div class="mb-3">
                         <label class="form-label">Email Address</label>
                         <input type="email" class="form-control" placeholder="abc@def.com">
                     </div>
+                </br>
                     <div class="mb-3">
                         <label class="form-label">Subject (Optional)</label>
                         <input type="text" class="form-control" placeholder="Write a subject">
                     </div>
+                </br>
                     <div class="mb-3">
                         <label class="form-label">Message</label>
                         <textarea class="form-control" rows="4" placeholder="Hi! I'd like to ask about..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-
-            <!-- Contact Info -->
-            <div class="col-md-6">
-                <h3>Contact Us</h3>
-                <p><strong>Physical Location:</strong> Visit us at our main office.</p>
-                <p><strong>Social Media:</strong> Connect with us on:</p>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none">Facebook</a></li>
-                    <li><a href="#" class="text-decoration-none">Twitter</a></li>
-                    <li><a href="#" class="text-decoration-none">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </div>  
+    </div>   
+</section>
 
  <!-- Footer -->
 
