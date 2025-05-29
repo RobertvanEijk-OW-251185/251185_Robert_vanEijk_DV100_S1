@@ -1,1006 +1,1299 @@
 /* Fonts */
-    /* Poppins Font, Bold48px, Medium18px, Regular18px link*/
-    .poppins-regular {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-    }
-    
-    .poppins-medium {
-        font-family: "Poppins-medium", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 18px;
-    }
-    
-    .poppins-bold {
-        font-family: "Poppins-bold", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 48px;
-    }
-
-    /* Poller One Font Link */
-    .poller-one-regular {
-        font-family: "Poller One", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-      
-
-    /*Porter Sans Block Font Link*/
-    @font-face {
-        font-family: 'PorterSansBlock';
-        src: url('../assets/fonts/porter_sans_block/porter-sans-inline-block-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-
-    /* Home */
-
-    /*Navbar*/
-
-    body {
-        margin: 0;
-        height: 10vh;
-        background-image: url(../assets/images/homePageHeader.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        font-family: Arial, sans-serif;
-        background-color: #45016d;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    .navbar {
-        margin-left: 80px;
-        margin-right: 80px;
-        margin-top: 40px;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #ffffffb5;
-        padding: 15px;
-        border-radius: 30px;
-        
-    }
-    .logo img {
-        height: 40px;
-        margin-left: 4%;
-    }
-    .navbar {
-        display: flex;
-        gap: 20px;
-    }
-    .navbar a {
-        color: rgb(99, 99, 99);
-        text-decoration: none;
-        padding: 10px 20px;
-    }
-    .navMiddle {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1%;
-
-        font-family: "Poppins", sans-serif;
-    }
-
-    .navbar-brand {
-        margin-right: 25%;
-    }
-    
-
-    .search-bar {
-        display: flex;
-        align-items: center;
-        background: #ffffffb5;
-        border-radius: 10px;
-        padding: 10px 15px;
-        gap: 10px;
-        position: relative;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        margin-right: 1%;
-    }
-
-    .search-bar input {
-        border: none;
-        outline: none;
-        font-family: "Poppins", sans-serif;
-        font-size: 16px;
-        flex: 1;
-        background: transparent;
-        margin-right: 10px; 
-    }
-
-    .search-bar .cart-icon {
-        position: relative;
-        cursor: pointer;
-    }
-
-    .search-bar .cart-icon img {
-        width: 24px;
-        height: 24px;
-    }
-
-    .search-bar .cart-icon .cart-badge {
-        position: absolute;
-        top: -5px;
-        right: -5px;
-        background: red;
-        color: white;
-        font-size: 12px;
-        font-weight: bold;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navbar a:hover, a:active {
-        text-decoration: underline;
-    }
-
-    .active, a:active {
-        text-decoration: underline!important;
-        color: #e51728!important;
-    }
-
-    @media (max-width: 600px) {
-        .menu {
-            flex-direction: column;
-            align-items: center;
-        }
-        .navbar {
-            flex-direction: column;
-            gap: 10px;
-        }
-    }
-
-
-    /* Company Introduction */
-
-    .head-words {
-        
-        font-family: 'PorterSansBlock', sans-serif;
-        font-size: 3.5rem;
-        color: #ff0000;
-        text-align: left;
-        padding-left: 10%;
-        margin-top: 65%;
-        width: 100%;
-    }
-
-    .head-words2 {
-        
-        font-family: "Poller One", serif;
-        font-size: 18px;
-        color: #45016d;
-        text-align: left;
-        padding-left: 10%;
-        width: 100%;
-    }
-
-    .hero-section {
-        width: 100vw; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 100px 0;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    
-    .hero-section .container {
-        width: 90%;
-    }
-    
-    .hero-section .row {
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        width: 100%;
-    }
-    
-    .carousel-inner img {
-        width: 609px;
-        height: 649px;
-        object-fit: cover;
-    }
-    
-    #carouselExample {
-        border-radius: 20px;
-        overflow: hidden;
-    }
-    
-    .carousel-inner img {
-        border-radius: 20px;
-    }
-
-    .carousel {
-        width: 150%;
-        margin-left: 80px;
-    }
-
-    .booking-section {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-        width: 70%;
-        text-align: left!important;
-    }
-
-    h1 {
-        font-family: "Poppins-medium", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 18px;
-        color: #55daeb;
-    }
-
-    h2 {
-        font-family: "Poppins-bold", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 48px;
-        margin-bottom: 20px;
-        color: #ffffff;
-    
-    }
-
-    p {
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        margin-bottom: 20px;
-
-    }
-    
-    .btn {
-        background-color: #e51728;
-        padding: 20px;
-        width: 30%!important;
-        border: none;
-        border-radius: 12px;
-        
-    }
-
-    /* Our Shuttles */
-    .shuttle-background {
-        background-color: #ffffff;
-        width: 100%;
-        height: auto;
-    }    
-
-    .shuttles {
-        padding: 5%;
-    }
-
-    .shuttle-text {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-        margin-left: 10%;
-        width: 70%;
-    }
-
-    .travel-style-text {
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-    }
-
-    .shuttles h1 {
-        font-family: "Poppins-medium", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 18px;
-        margin-bottom: 20px;
-        color: #55daeb!important;
-    }
-
-    .shuttles h2 {
-        font-family: "Poppins-bold", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 48px;
-        color:#45016d;
-    }
-
-    .card {
-        background-color: #45016d00;
-        border: #45016d00;
-        color: #ffffff;
-        text-align: center;
-    }
-
-    .card-info {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-    }
-
-    
-    #contact{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn-secondary {
-        background-color: #e51728;
-        padding: 20px;
-        width: 50%!important;
-        border: none;
-    }
-
-    .divbuttoncenter {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5%;
-    }
-
-    #upcoming-trips {
-        margin-top: 2%;
-    }
-
-    /* Footer */
-
-    .footer-text {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-        color:rgb(125, 125, 125)
-    }
-
-    .footer {
-        background-color: #fff;
-        background-size: cover;
-        color: #707070;
-        width: 100%;
-        font-family: "Poppins", sans-serif;
-        padding: 40px 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer-middle {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5%;
-    }
-
-    .footer-container {
-        margin: 0 auto;
-    }
-
-    .footer-columns {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        text-align: left;
-        gap: 40px;
-    }
-
-
-    .footer-logo, .footer-middle, .social-links {
-        flex: 1;
-        min-width: 200px;
-    }
-
-    .footer-logo img {
-        width: 266px;
-        height: 48px;
-    }
-
-    .footer-logo p {
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-    .footer-middle ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .footer-middle h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .footer-middle li {
-        margin-bottom: 10px;
-    }
-
-    .footer-middle a {
-        color: #333;
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-    .footer-middle a:hover {
-        text-decoration: underline;
-    }
-
-    .social-icons {
-        display: flex;
-        gap: 15px;
-    }
-
-    .social-icons a img {
-        width: 77px;
-        height: 77px;
-    }
-
-    .divider {
-        height: 1px;
-        background-color: #ccc;
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .footer-bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 12px;
-        color: #666;
-        width: 100%;
-    }
-
-    .footer-links a {
-        color: #666;
-        text-decoration: none;
-        margin-left: 15px;
-    }
-
-    .footer-links a:hover {
-        text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-        .footer-columns {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .footer-bottom {
-            flex-direction: column;
-            text-align: center;
-            gap: 10px;
-        }
-    }
-
-
-
-    /* Flights */
-
-    .flights-page {
-        background-color: #45016d;
-        background-image: none;
-    }
-
-    .flight-extra-info {
-        list-style-type: none;
-        color: #808080;
-        margin-left: 2%;
-    }
-
-    .card img {
-        height: 200px;
-        object-fit: cover;
-    }
-
-    .price {
-        font-size: 1.2rem;
-        color: #d9534f;
-    }
-
-    .btn-primary {
-        width: 100%;
-    }
-
-    .header-banner {
-        background-image: url("../assets/images/headerbackBack.png");         
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat;
-        height: 33vh; 
-        width: 100%;
-    }
-
-
-    .header-container {
-        position: relative;
-        width: 100%;
-    }
-
-
-    .navbar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 90%;
-        z-index: 10; 
-        background: rgba(255, 255, 255, 0.7); 
-        padding: 15px;
-    }
-
-
-    .header-banner {
-        position: relative;
-        background-image: url('../assets/images/headerbackBack.png');
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 50vh; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .filter-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #4a0072;
-        padding: 10px 20px;
-        color: white;
-        font-family: "Poppins", sans-serif;
-    }
-    
-    .filter-left {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-left: 5%;
-    }
-    
-    .filter-btn, .grid-btn, .list-btn {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-    
-    .list-btn.active {
-        color: red; /* Active state for the list button */
-    }
-    
-    .filter-bar-divider {
-        height: 20px;
-        width: 1px;
-        background-color: white;
-    }
-    
-    .results-text {
-        font-size: 14px;
-        opacity: 0.8;
-    }
-    
-    .filter-right {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-right: 5%;
-    }
-    
-    .show-count {
-        background-color: #b388eb;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 10px;
-        font-size: 14px;
-        color: white;
-        cursor: pointer;
-    }
-    
-    .sort-dropdown {
-        background-color: #d1b3ff;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 10px;
-        font-size: 14px;
-        color: white;
-        cursor: pointer;
-    }
-
-
-    h4 {
-        font-family: 'PorterSansBlock', sans-serif;
-        font-size: 3.5rem;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 10%;
-        width: 100%;
-    }
-
-
-    .flights-pictures {
-        width: 609px;
-        height: 649px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .flights-pictures img {
-        width: 609px;
-        height: 649px;
-        object-fit: cover;
-        border-radius: 30px;
-    }
-
-    .flights-list-section135 {
-        background-color: #ffffff;
-        padding: 5%;
-    }
-
-    .title135 {
-        font-family: "Poppins", sans-serif;
-        color: black;
-    }
-
-    .flights-list-section246 {
-        background-color: #45016d;
-        color: #ffffff;
-        padding: 5%;
-    }
-
-    .title246 {
-        font-family: "Poppins", sans-serif;
-        color: #ffffff;
-    }
-
-    .price135 {
-        font-family: "Poppins", sans-serif;
-        color: #858585;
-    }
-    
-    .price246 {
-        font-family: "Poppins", sans-serif;
-        color: #55daeb;
-    }
-
-    
-    .btn-group .btn {
-        background-color: #45016d;
-        border-color: #45016d;
-        color: white;
-    }
-
-    .counter-button .btn {
-        background-color: #55daeb;
-        border-color: #55daeb;
-        color: white;
-    }
-
-    .btn-group .btn:hover {
-        color: #55daeb;
-    }
-
-
-    /* Contact */
-
-    .contact-page {
-        background-image: url(../assets/images/headerbackBack.png);
-        background-color: #ffffff;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    .container {
-        max-width: 900px;
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    ul li {
-        margin-bottom: 10px;
-    }
-
-    .social-media-pages {
-        font-family: "Poppins-bold", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 48px;
-        color: #45016d;
-    }
-
-
-    .contact-section {
-        padding: 5% 0;
-        background-color: #fff;
-    }
-
-    .left-contact-column {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .contact-us {
-        padding: 0 20px;
-        margin-left: 15%;
-    }
-
-    .map-title-sub {
-        font-family: "Poppins-medium", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 18px;
-        color: #55daeb!important;
-    }
-
-    .map-title {
-        font-family: "Poppins-bold", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 48px;
-        color: #45016d;
-    }
-
-    .map-container {
-        width: 607px;
-        height: 534px;
-        border-radius: 20px;
-        overflow: hidden;
-        position: relative;
-        margin-left: 15%;
-    }
-
-    .map-header {
-        margin-left: 15%;
-        margin-top: 5%;
-    }
-
-    .map-title-sub {
-        font-family: "Poppins", sans-serif;
-        color: #45016d;
-        text-align: left;
-        padding-left: 10px;
-    }
-
-    .map-title {
-        font-family: "Poppins", sans-serif;
-        color: #45016d;
-        text-align: left;
-        padding-left: 10px;
-    }
-
-    .map-container iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
-
-    .contact-form-container {
-        width: 609px;
-        height: 950px;
-        position: relative;
-    }
-
-    .contact-form {
-        background-image: url('../assets/images/formBack.png');
-        background-size: cover;
-        background-position: center;
-        padding: 40px;
-        border-radius: 45px;
-        color: #ffffff;
-        height: 100%;
-    }
-
-    .contact-form input {
-        width: 100%;
-        height: 75px;
-        border-radius: 15px;
-    }
-
-    .contact-form textarea {
-        width: 100%;
-        height: 100px;
-        border-radius: 15px;
-    }
-
-    .contact-form h3 {
-        color: #ffffff;
-        margin-bottom: 30px;
-        font-size: 24px;
-    }
-
-    .contact-form .form-control {
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(255, 255, 255);
-        color: rgb(127, 127, 127);
-        margin-bottom: 20px;
-    }
-
-    .contact-form .form-control::placeholder {
-        color: rgb(125, 125, 125);
-    }
-
-    contact-form .btn-primary {
-        background-color: #e51728;
-        border: none;
-        padding: 12px;
-        margin-top: 20px;
-        font-weight: 500;
-        width: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    /* Responsive adjustments */
-    @media (max-width: 1200px) {
-        .map-container,
-        .contact-form-container {
-            width: 100%;
-            max-width: 607px;
-        }
-        
-        .contact-form-container {
-            height: auto;
-            min-height: 649px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .left-contact-column {
-            margin-bottom: 40px;
-        }
-        
-        .map-container {
-            height: 400px;
-        }
-    }
-
-
-
+/* Poppins Font, Bold48px, Medium18px, Regular18px link*/
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.poppins-medium {
+  font-family: "Poppins-medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.poppins-bold {
+  font-family: "Poppins-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+}
+
+/* Poller One Font Link */
+.poller-one-regular {
+  font-family: "Poller One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Porter Sans Block Font Link*/
+@font-face {
+  font-family: "PorterSansBlock";
+  src: url("../assets/fonts/porter_sans_block/porter-sans-inline-block-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Home */
+
+/*Navbar*/
+
+body {
+  margin: 0;
+  height: 10vh;
+  background-image: url(../assets/images/homePageHeader.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #45016d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffffb5;
+  padding: 15px;
+  border-radius: 30px;
+}
+.logo img {
+  height: 40px;
+  margin-left: 4%;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.navMiddle {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+  margin-right: 25%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #ffffffb5;
+  border-radius: 10px;
+  padding: 10px 15px;
+  gap: 10px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 1%;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  flex: 1;
+  background: transparent;
+  margin-right: 10px;
+}
+
+.search-bar .cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.search-bar .cart-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.search-bar .cart-icon .cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchItem {
+  border: none;
+  border-radius: 10px;
+}
+
+.navbar a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.active,
+a:active {
+  text-decoration: underline !important;
+  color: #e51728 !important;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Search Bar PopUp Thing */
+
+.flightProductSearch {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 233px;
+  height: 400px;
+  position: absolute;
+  top: 7%;
+  left: 75.4%;
+  padding: 10px;
+  border-radius: 10px 0 15px 15px;
+  list-style: none;
+  pointer-events: auto;
+  opacity: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.flightProductSearch.showSearch {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.flightProductSearch::-webkit-scrollbar {
+  display: none;
+}
+
+.searchFlights {
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 10;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.flightProducts {
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+}
+
+.searchRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.searchResultsWrapper {
+  width: 100%;
+}
+
+.searchItemBar {
+  flex: 1;
+  min-width: 150px;
+}
+
+.searchItem {
+  border: none;
+  border-radius: 10px;
+}
+
+#searchbar {
+  border-style: none;
+}
+
+#openSearch {
+  border-style: none;
+  border-radius: 10px;
+  background: #fff;
+  width: 25px;
+}
+
+.searchFlights::-webkit-scrollbar {
+  display: none;
+}
+
+.searchItem {
+  background-color: #fff;
+}
+
+.productFlight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.productFlight img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.flightsList {
+  padding: 0;
+}
+
+.pDetails {
+  padding-left: 10px;
+}
+
+.title {
+  color: #333;
+  font-size: 20px;
+}
+
+/* Search Bar PopUp Thing End */
+
+/* Company Introduction */
+
+.head-words {
+  font-family: "PorterSansBlock", sans-serif;
+  font-size: 3.5rem;
+  color: #ff0000;
+  text-align: left;
+  padding-left: 10%;
+  margin-top: 65%;
+  width: 100%;
+}
+
+.head-words2 {
+  font-family: "Poller One", serif;
+  font-size: 18px;
+  color: #45016d;
+  text-align: left;
+  padding-left: 10%;
+  width: 100%;
+}
+
+.hero-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero-section .container {
+  width: 90%;
+}
+
+.hero-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel-inner img {
+  width: 609px;
+  height: 649px;
+  object-fit: cover;
+}
+
+#carouselExample {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  border-radius: 20px;
+}
+
+.carousel {
+  width: 150%;
+  margin-left: 80px;
+}
+
+.booking-section {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  width: 70%;
+  text-align: left !important;
+}
+
+h1 {
+  font-family: "Poppins-medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #55daeb;
+}
+
+h2 {
+  font-family: "Poppins-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #e51728;
+  padding: 20px;
+  width: 30% !important;
+  border: none;
+  border-radius: 12px;
+}
+
+.btn .btn:hover {
+  color: #55daeb;
+}
+
+/* Our Shuttles */
+.shuttle-background {
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+
+.shuttles {
+  padding: 5%;
+}
+
+.shuttle-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: 10%;
+  width: 70%;
+}
+
+.travel-style-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.shuttles h1 {
+  font-family: "Poppins-medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #55daeb !important;
+}
+
+.shuttles h2 {
+  font-family: "Poppins-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: #45016d;
+}
+
+.card {
+  background-color: #45016d00;
+  border: #45016d00;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-secondary {
+  background-color: #e51728;
+  padding: 20px;
+  width: 50% !important;
+  border: none;
+}
+
+.divbuttoncenter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+#upcoming-trips {
+  margin-top: 2%;
+}
+
+.card-title-home {
+  color: #ffffff;
+  font-family: "Poppins-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}
+
+/* Footer */
+
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(125, 125, 125);
+}
+
+.footer {
+  background-color: #fff;
+  background-size: cover;
+  color: #707070;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  gap: 40px;
+}
+
+.footer-logo,
+.footer-middle,
+.social-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  width: 266px;
+  height: 48px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-middle h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-middle li {
+  margin-bottom: 10px;
+}
+
+.footer-middle a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-middle a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 77px;
+  height: 77px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ccc;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #666;
+  width: 100%;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Flights */
+
+.flights-page {
+  background-color: #45016d;
+  background-image: none;
+}
+
+.flight-extra-info {
+  list-style-type: none;
+  color: #808080;
+  margin-left: 2%;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #d9534f;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.header-banner {
+  background-image: url("../assets/images/headerbackBack.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 33vh;
+  width: 100%;
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+}
+
+.header-banner {
+  position: relative;
+  background-image: url("../assets/images/headerbackBack.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a0072;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.filter-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5%;
+}
+
+.filter-btn,
+.grid-btn,
+.list-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.list-btn.active {
+  color: red;
+}
+
+.filter-bar-divider {
+  height: 20px;
+  width: 1px;
+  background-color: white;
+}
+
+.results-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.filter-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 5%;
+}
+
+.show-count {
+  background-color: #b388eb;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.sort-dropdown {
+  background-color: #d1b3ff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+h4 {
+  font-family: "PorterSansBlock", sans-serif;
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.flights-pictures {
+  width: 609px;
+  height: 649px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flights-pictures img {
+  width: 609px;
+  height: 649px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.flights-list-section135 {
+  background-color: #ffffff;
+  padding: 5%;
+}
+
+.title135 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.flights-list-section246 {
+  background-color: #45016d;
+  color: #ffffff;
+  padding: 5%;
+}
+
+.title246 {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.price135 {
+  font-family: "Poppins", sans-serif;
+  color: #858585;
+}
+
+.price246 {
+  font-family: "Poppins", sans-serif;
+  color: #55daeb;
+}
+
+.btn-group .btn {
+  background-color: #45016d;
+  border-color: #45016d;
+  color: white;
+}
+
+.counter-button .btn {
+  background-color: #55daeb;
+  border-color: #55daeb;
+  color: white;
+}
+
+.btn-group .btn:hover {
+  background-color: #55daeb !important;
+}
+
+.btn-group .btn {
+  background-color: #45016d;
+  border-style: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.counter-display {
+  text-align: center;
+  color: #fff;
+  background-color: #45016d;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-style: none;
+}
+
+.counter-display2 {
+  text-align: center;
+  color: #fff;
+  background-color: #55daeb;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-style: none;
+}
+
+.blue {
+  background-color: #55daeb !important;
+}
+
+.tallyCounter {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 70px;
+  width: 135px;
+}
+
+.buttonMin {
+  border-right: none;
+  border-radius: 15px 0 0 15px;
+}
+
+.buttonAdd {
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+}
+
+.btn-group .btn:hover {
+  background-color: #55daeb;
+}
+
+/* Contact */
+
+.contact-page {
+  background-image: url(../assets/images/headerbackBack.png);
+  background-color: #ffffff;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 900px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.social-media-pages {
+  font-family: "Poppins-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: #45016d;
+}
+
+.contact-section {
+  padding: 5% 0;
+  background-color: #fff;
+}
+
+.left-contact-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-us {
+  padding: 0 20px;
+  margin-left: 15%;
+}
+
+.map-title-sub {
+  font-family: "Poppins-medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #55daeb !important;
+}
+
+.map-title {
+  font-family: "Poppins-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: #45016d;
+}
+
+.map-container {
+  width: 607px;
+  height: 534px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 15%;
+}
+
+.map-header {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.map-title-sub {
+  font-family: "Poppins", sans-serif;
+  color: #45016d;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.map-title {
+  font-family: "Poppins", sans-serif;
+  color: #45016d;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contact-form-container {
+  width: 609px;
+  height: 950px;
+  position: relative;
+}
+
+.contact-form {
+  background-image: url("../assets/images/formBack.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  border-radius: 45px;
+  color: #ffffff;
+  height: 100%;
+}
+
+.contact-form input {
+  width: 100%;
+  height: 75px;
+  border-radius: 15px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.contact-form h3 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.contact-form .form-control {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(127, 127, 127);
+  margin-bottom: 20px;
+}
+
+.contact-form .form-control::placeholder {
+  color: rgb(125, 125, 125);
+}
+
+contact-form .btn-primary {
+  background-color: #e51728;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  font-weight: 500;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form PopUp */
+.modal-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-container.show {
+  display: flex;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.custom-modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: #45016d 0px 0px 20px;
+  font-family: "Poppins-medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: black;
+  opacity: 1;
+}
+
+#close {
+  background-color: #45016d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+/* Form PopUp End */
+
+/* Cart PopUp*/
+.cart-button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #45016d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #333;
+  max-width: 400px;
+  width: 17%;
+  text-align: right;
+  top: -304px;
+  left: 563px;
+}
+
+.cartP {
+  font-family: "Poppins-medium", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.cartH {
+  font-family: "Poppins-medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.close-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #45016d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Cart PopUp End */
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .map-container,
+  .contact-form-container {
+    width: 100%;
+    max-width: 607px;
+  }
+
+  .contact-form-container {
+    height: auto;
+    min-height: 649px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-contact-column {
+    margin-bottom: 40px;
+  }
+
+  .map-container {
+    height: 400px;
+  }
+}
 
 /* About Sections */
 
-    .about-us {
-        background-color: #ffffff;
-        padding: 5%;
-    }
+.about-us {
+  background-color: #ffffff;
+  padding: 5%;
+}
 
-    .about-us-text {
-        color: #45016d;
-    }
-    
+.about-us-text {
+  color: #45016d;
+}
 
-    .our-mission {
-        padding: 5%;
-    }
+.our-mission {
+  padding: 5%;
+}
 
-    .mission-text {
-        color: #ffffff;
-    }
-    
-    .mission-paragraph {
-        color: #ffffff;
-    }
+.mission-text {
+  color: #ffffff;
+}
 
+.mission-paragraph {
+  color: #ffffff;
+}
 
-/* === Custom Responsive Enhancements === */
+/* Custom Responsive */
 
 @media (max-width: 991.98px) {
-    .head-words,
-    .head-words2 {
-        text-align: center;
-    }
+  .head-words,
+  .head-words2 {
+    text-align: center;
+  }
 
-    .hero-section .row {
-        flex-direction: column;
-    }
+  .hero-section .row {
+    flex-direction: column;
+  }
 
-    .carousel {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .carousel {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
 
-    .carousel .col-md-6,
-    .booking-section {
-        width: 100%;
-        padding: 0 15px;
-    }
+  carouselSelf {
+    width: 609px;
+    height: 649px;
+  }
 
-    .booking-section {
-        text-align: center;
-    }
+  .carousel-image {
+    width: 609px;
+    height: 649px;
+  }
 
-    .shuttles .row {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .carousel .col-md-6,
+  .booking-section {
+    width: 100%;
+    padding: 0 15px;
+  }
 
-    .shuttle-text {
-        text-align: center;
-        padding: 0 15px;
-    }
+  .booking-section {
+    text-align: center;
+  }
 
-    .shuttles img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
+  .shuttles .row {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    #upcoming-trips .card {
-        margin-bottom: 20px;
-    }
+  .shuttle-text {
+    text-align: center;
+    padding: 0 15px;
+  }
 
-    #upcoming-trips .row {
-        flex-direction: column;
-        align-items: center;
-    }
+  .shuttles img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 
-    .divbuttoncenter {
-        text-align: center;
-        margin-top: 20px;
-    }
+  #upcoming-trips .card {
+    margin-bottom: 20px;
+  }
 
-    .footer-columns {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
+  #upcoming-trips .row {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-logo img {
-        margin: 0 auto;
-    }
+  .divbuttoncenter {
+    text-align: center;
+    margin-top: 20px;
+  }
 
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 575.98px) {
-    h1, h2 {
-        font-size: 1.5rem;
-    }
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
 
-    .card-title {
-        font-size: 1.25rem;
-    }
+  .card-title {
+    font-size: 1.25rem;
+  }
 
-    .card-info {
-        font-size: 0.95rem;
-    }
+  .card-info {
+    font-size: 0.95rem;
+  }
 
-    .footer-links a {
-        display: block;
-        margin: 5px 0;
-    }
+  .footer-links a {
+    display: block;
+    margin: 5px 0;
+  }
 }
