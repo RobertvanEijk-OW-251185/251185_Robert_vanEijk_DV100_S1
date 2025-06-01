@@ -6,18 +6,28 @@ if (searchItemBtn) {
   });
 }
 
+const searchInput = document.getElementById("searchbar");
 const searchBtn = document.querySelector(".searchItem");
 const flightModal = document.getElementById("flightProductSearch");
 const closeBtn = document.getElementById("closeSearch");
 
+// Show Search field, mag glass button
 searchBtn.addEventListener("click", function () {
   flightModal.classList.add("showSearch");
 });
 
+// show search field, type input
+searchInput.addEventListener("input", function () {
+  flightModal.classList.add("showSearch");
+  search_flights();
+});
+
+// Close Search field, button
 closeBtn.addEventListener("click", function () {
   flightModal.classList.remove("showSearch");
 });
 
+//Filter Flights Search
 function search_flights() {
   let input = document.getElementById("searchbar").value;
   input = input.toLowerCase();
@@ -31,7 +41,6 @@ function search_flights() {
     }
   }
 }
-
 
 // Tally Counter Buttons
 

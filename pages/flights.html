@@ -102,8 +102,8 @@
             </button>
             <input
               class="searchItem bar"
-              id="searchItem"
-              onkeyup="search()"
+              id="searchbar"
+              onkeyup="search_flights()"
               type="text"
               placeholder="Search"
             />
@@ -144,17 +144,6 @@
       <div class="flightProductSearch" id="flightProductSearch">
         <div class="searchFlights" id="searchFlights">
           <div class="searchRow">
-            <button class="searchItemButton" id="openSearch">
-              <i class="fas fa-search" alt="search"></i>
-            </button>
-            <input
-              class="searchItemBar bar"
-              id="searchbar"
-              onkeyup="search_flights()"
-              type="text"
-              name="search"
-              placeholder="Search Flights.."
-            />
             <button class="close-btn" id="closeSearch">Close</button>
           </div>
           <ul class="flightsList" id="list">
@@ -162,7 +151,9 @@
               <div class="productFlight">
                 <img src="../assets/images/flighhtMars.png" alt="Mars Flight" />
                 <div class="pDetails">
-                  <h2 class="title">The Classic Mars Experience</h2>
+                  <a class="title" href="#marsFlight"
+                    >The Classic Mars Experience</a
+                  >
                   <p>R25,000.00</p>
                 </div>
               </div>
@@ -171,10 +162,12 @@
               <div class="productFlight">
                 <img
                   src="../assets/images/flightNeptune.png"
-                  alt="Mars Flight"
+                  alt="Neptune Flight"
                 />
                 <div class="pDetails">
-                  <h2 class="title">Neptune’s Cosmic Dive</h2>
+                  <a class="title" href="#neptuneFLight"
+                    >Neptune’s Cosmic Dive</a
+                  >
                   <p>R45,000.00</p>
                 </div>
               </div>
@@ -183,10 +176,10 @@
               <div class="productFlight">
                 <img
                   src="../assets/images/flightJupiter.png"
-                  alt="Mars Flight"
+                  alt="Jupiter Flight"
                 />
                 <div class="pDetails">
-                  <h2 class="title">The Giant’s Journey</h2>
+                  <a class="title" href="#jupiterFlight">The Giant’s Journey</a>
                   <p>R65,000.00</p>
                 </div>
               </div>
@@ -195,10 +188,10 @@
               <div class="productFlight">
                 <img
                   src="../assets/images/flightSaturn.png"
-                  alt="Mars Flight"
+                  alt="Saturn Flight"
                 />
                 <div class="pDetails">
-                  <h2 class="title">Ring Around a Saturn</h2>
+                  <a class="title" href="#saturnFlight">Ring Around a Saturn</a>
                   <p>R40,000.00</p>
                 </div>
               </div>
@@ -207,19 +200,19 @@
               <div class="productFlight">
                 <img
                   src="../assets/images/flightUranus.png"
-                  alt="Mars Flight"
+                  alt="Uranus Flight"
                 />
                 <div class="pDetails">
-                  <h2 class="title">Uranus Uncharted</h2>
+                  <a class="title" href="#uranusFlight">Uranus Uncharted</a>
                   <p>R50,000.00</p>
                 </div>
               </div>
             </li>
             <li class="flightProducts">
               <div class="productFlight">
-                <img src="../assets/images/flightMoon.png" alt="Mars Flight" />
+                <img src="../assets/images/flightMoon.png" alt="Moon Flight" />
                 <div class="pDetails">
-                  <h2 class="title">Moonlight Meander</h2>
+                  <a class="title" href="#moonFlight">Moonlight Meander</a>
                   <p>R15,000.00</p>
                 </div>
               </div>
@@ -262,7 +255,7 @@
             />
           </div>
           <div class="col-md-6 product">
-            <div class="flights-list-info" id="marsFlight">
+            <div class="flights-list-info">
               <h2 class="title135" id="marsFlight">
                 The Classic Mars Experience
               </h2>
@@ -316,8 +309,8 @@
             />
           </div>
           <div class="col-md-6 product">
-            <div class="flights-list-info" id="neptuneFlight">
-              <h2 class="246">Neptune’s Cosmic Dive</h2>
+            <div class="flights-list-info">
+              <h2 class="246" id="neptuneFLight">Neptune’s Cosmic Dive</h2>
               <p class="price246"><strong>R45,000.00</strong></p>
               <p>
                 Embark on a voyage to Neptune aboard the "Neptune Voyager."
@@ -366,8 +359,8 @@
             />
           </div>
           <div class="col-md-6 product">
-            <div class="flights-list-info" id="jupiterFlight">
-              <h2 class="title135">The Giant’s Journey</h2>
+            <div class="flights-list-info">
+              <h2 class="title135" id="jupiterFlight">The Giant’s Journey</h2>
               <p class="price135"><strong>R65,000.00</strong></p>
               <p>
                 Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness
@@ -416,8 +409,8 @@
             />
           </div>
           <div class="col-md-6 product">
-            <div class="flights-list-info" id="saturnFlight">
-              <h2 class="title246">Ring Around a Saturn</h2>
+            <div class="flights-list-info">
+              <h2 class="title246" id="saturnFlight">Ring Around a Saturn</h2>
               <p class="price246"><strong>R40,000.00</strong></p>
               <p>
                 Embark on a thrilling voyage to Saturn aboard the "Saturn
@@ -467,8 +460,8 @@
             />
           </div>
           <div class="col-md-6 product">
-            <div class="flights-list-info" id="uranusFlight">
-              <h2 class="title135">Uranus Uncharted</h2>
+            <div class="flights-list-info">
+              <h2 class="title135" id="uranusFlight">Uranus Uncharted</h2>
               <p class="price135"><strong>R50,000.00</strong></p>
               <p>
                 Embark on a cosmic adventure to Uranus with our "Uranus
@@ -518,8 +511,8 @@
             />
           </div>
           <div class="col-md-6 product">
-            <div class="flights-list-info" id="moonFlight">
-              <h2 class="title246">Moonlight Meander</h2>
+            <div class="flights-list-info">
+              <h2 class="title246" id="moonFlight">Moonlight Meander</h2>
               <p class="price246"><strong>R15,000.00</strong></p>
               <p>
                 Experience the ultimate lunar getaway with our "Moonlight

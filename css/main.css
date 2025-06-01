@@ -180,14 +180,13 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 233px;
+  width: 250px;
   height: 400px;
   position: absolute;
-  top: 7%;
+  top: 12%;
   left: 75.4%;
   padding: 10px;
-  border-radius: 10px 0 15px 15px;
+  border-radius: 10px;
   list-style: none;
   pointer-events: auto;
   opacity: 0;
@@ -217,16 +216,19 @@ a:active {
   padding: 0;
   list-style: none;
   max-height: 300px;
+  width: 230px;
   overflow-y: auto;
+  overflow-x: hidden;
   border-top: 1px solid #ddd;
 }
 
 .searchRow {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  position: absolute;
 }
 
 .searchResultsWrapper {
@@ -287,6 +289,7 @@ a:active {
 .title {
   color: #333;
   font-size: 20px;
+  text-decoration: none;
 }
 
 /* Search Bar PopUp Thing End */
@@ -852,8 +855,26 @@ h4 {
   border-style: none;
 }
 
-.blue {
-  background-color: #55daeb !important;
+.buttonMin.btn.blue {
+  background-color: #55daeb;
+}
+
+.buttonAdd.btn.blue {
+  background-color: #55daeb;
+}
+
+.counter-display.blue {
+  background-color: #55daeb;
+}
+
+.buttonMin.btn.blue:hover {
+  background-color: #bababa !important;
+  color: rgb(255, 255, 255);
+}
+
+.buttonAdd.btn.blue:hover {
+  background-color: #bababa !important;
+  color: rgb(255, 255, 255);
 }
 
 .tallyCounter {
