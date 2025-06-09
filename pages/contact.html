@@ -63,22 +63,191 @@
                     <span class="mx-2">|</span>
                     <button class="searchItem cart-icon position-relative" id="openCart">
                       <i class="fa-solid fa-basket-shopping" alt="cart"></i>
-                      <div
-                        class="cart-badge position-absolute top-0 start-100 translate-middle"
-                      >
-                        2
+                      <div class="cartTotalDisplay cart-badge">
+                        <input type="number" class="position-absolute top-0 start-100
+                        translate-middle"" id="cartTotalDisplay" value="0" disabled />
                       </div>
                     </button>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Cart PopUp -->
     <div class="modal-container" id="cartModal">
-        <div class="modal-content">
-          <h5 class="cartH">Your Cart:</h5>
-          <p class="cartP">Items will appear here.</p>
-          <button class="close-btn" id="closeCart">Close</button>
+      <div class="modal-content" id="cartContent">
+        <h5 class="cartH">Your Cart:</h5>
+        <div class="divider my-3"></div>
+        <div class="cartItems">
+          <ul class="flightsList" id="list">
+            <li class="flightProductsCart flightMars" id="flightMars">
+              <div class="productFlight">
+                <img src="../assets/images/flighhtMars.png" alt="Mars Flight" />
+                <div class="pDetails">
+                  <a class="title" href="#marsFlight"
+                    >The Classic Mars Experience</a
+                  >
+                  <div class="cartCounterDisplayetc">
+                    <button class="remove-btn" id="removeFlightMars">
+                      <i class="fa-solid fa-xmark removeItem"></i>
+                    </button>
+                    <input
+                      type="number"
+                      class="cart-item-counter-display"
+                      id="prod1"
+                      value="0"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightNeptune" id="flightNeptune">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightNeptune.png"
+                    alt="Neptune Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#neptuneFLight"
+                      >Neptune’s Cosmic Dive</a
+                    >
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightNeptune">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod2"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightJupiter" id="flightJupiter">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightJupiter.png"
+                    alt="Jupiter Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#jupiterFlight"
+                      >The Giant’s Journey</a
+                    >
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightJupiter">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod3"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightSaturn" id="flightSaturn">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightSaturn.png"
+                    alt="Saturn Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#saturnFlight"
+                      >Ring Around a Saturn</a
+                    >
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightSaturn">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod4"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightUranus" id="flightUranus">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightUranus.png"
+                    alt="Uranus Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#uranusFlight">Uranus Uncharted</a>
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightUranus">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod5"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightMoon" id="flightMoon">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightMoon.png"
+                    alt="Moon Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#moonFlight">Moonlight Meander</a>
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightMoon">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod6"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+        <div class="cartButtons">
+          <div class="continue Shopping">
+            <button class="close-btn closeCart" id="closeCart">
+              Continue Shopping
+            </button>
+          </div>
+          <div class="checkoutCart">
+            <button class="close-btn checkoutCart" id="checkoutCart">
+              Check Out
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
 <!-- Header -->
@@ -203,8 +372,8 @@
     <!-- Contact Section -->
 
 <section class="contact-section">
-    <div class="row w-100">
-        <div class="col-md-6 left-contact-column">
+    <div class="row w-100 mb-4">
+        <div class="left-contact-column col-md-6 mb-4">
 
             <section class="contact-us">
                 <h1>CONTACT US THROUGH OUR</h1>
@@ -217,18 +386,20 @@
                 </div>
             </section>
 
-            <div class="map-header">
-                <h1 class="map-title-sub">OR VISIT US AT</h1>
-                <h2 class="map-title">Physical Location</h2>
-            </div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.884685394281!2d28.20846111265648!3d-25.89190404184441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1743763859280!5m2!1sen!2sza" 
-                    width="607" height="534" style="border:0;" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <section class="map">
+              <div class="map-header">
+                  <h1 class="map-title-sub">OR VISIT US AT</h1>
+                  <h2 class="map-title">Physical Location</h2>
+              </div>
+              <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.884685394281!2d28.20846111265648!3d-25.89190404184441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1743763859280!5m2!1sen!2sza"
+                      width="607" height="534" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </section>
         </div>
 
-        <div class="col-md-6">
+        <div class="right-contact-column col-md-6">
             <div class="contact-form-container">                        
                 <form class="contact-form">
                     <h2>SEND US A MESSAGE</h2>

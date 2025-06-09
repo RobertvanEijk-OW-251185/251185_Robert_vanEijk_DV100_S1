@@ -113,21 +113,191 @@
               id="openCart"
             >
               <i class="fa-solid fa-basket-shopping" alt="cart"></i>
-              <div
-                class="cart-badge position-absolute top-0 start-100 translate-middle"
-              >
-                2
+
+              <div class="cartTotalDisplay cart-badge">
+                <input type="number" class="position-absolute top-0 start-100
+                translate-middle"" id="cartTotalDisplay" value="0" disabled />
               </div>
             </button>
           </div>
         </div>
       </div>
     </nav>
+
+    <!-- cart popup -->
     <div class="modal-container" id="cartModal">
-      <div class="modal-content">
+      <div class="modal-content" id="cartContent">
         <h5 class="cartH">Your Cart:</h5>
-        <p class="cartP">Items will appear here.</p>
-        <button class="close-btn" id="closeCart">Close</button>
+        <div class="divider my-3"></div>
+        <div class="cartItems">
+          <ul class="flightsList" id="list">
+            <li class="flightProductsCart flightMars" id="flightMars">
+              <div class="productFlight">
+                <img src="../assets/images/flighhtMars.png" alt="Mars Flight" />
+                <div class="pDetails">
+                  <a class="title" href="#marsFlight"
+                    >The Classic Mars Experience</a
+                  >
+                  <div class="cartCounterDisplayetc">
+                    <button class="remove-btn" id="removeFlightMars">
+                      <i class="fa-solid fa-xmark removeItem"></i>
+                    </button>
+                    <input
+                      type="number"
+                      class="cart-item-counter-display"
+                      id="prod1"
+                      value="0"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightNeptune" id="flightNeptune">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightNeptune.png"
+                    alt="Neptune Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#neptuneFLight"
+                      >Neptune’s Cosmic Dive</a
+                    >
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightNeptune">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod2"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightJupiter" id="flightJupiter">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightJupiter.png"
+                    alt="Jupiter Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#jupiterFlight"
+                      >The Giant’s Journey</a
+                    >
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightJupiter">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod3"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightSaturn" id="flightSaturn">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightSaturn.png"
+                    alt="Saturn Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#saturnFlight"
+                      >Ring Around a Saturn</a
+                    >
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightSaturn">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod4"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightUranus" id="flightUranus">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightUranus.png"
+                    alt="Uranus Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#uranusFlight">Uranus Uncharted</a>
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightUranus">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod5"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flightProductsCart flightMoon" id="flightMoon">
+              <div class="cartItem">
+                <div class="productFlight">
+                  <img
+                    src="../assets/images/flightMoon.png"
+                    alt="Moon Flight"
+                  />
+                  <div class="pDetails">
+                    <a class="title" href="#moonFlight">Moonlight Meander</a>
+                    <div class="cartCounterDisplayetc">
+                      <button class="remove-btn" id="removeFlightMoon">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                      <input
+                        type="number"
+                        class="cart-item-counter-display"
+                        id="prod6"
+                        value="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="cartButtons">
+          <div class="continue Shopping">
+            <button class="close-btn closeCart" id="closeCart">
+              Continue Shopping
+            </button>
+          </div>
+          <div class="checkoutCart">
+            <button class="close-btn checkoutCart" id="checkoutCart">
+              Check Out
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -262,15 +432,18 @@
               <p class="price135">
                 <s>R50,000.00</s> <strong>R25,000.00</strong>
               </p>
+              <div class="starReviews">
+                <p class="starRatings">★★★★⯨</p>
+                <p class="reviews">36 Customer Reviews</p>
+              </div>
               <p>
-                Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness
-                its majestic storms and swirling atmosphere. Dive into metallic
-                hydrogen oceans. Explore its moons, each a world unto itself.
-                Engage in gravity surfing, comet chasing, and space excursions.
-                Experience cosmic wonder in luxury, blending exploration with
-                adventure.
+                Embark on a Mars vacation: red deserts, ancient relics, and
+                towering canyons await. Enjoy low-gravity hiking, rover trips to
+                Olympus Mons, and stargazing under Phobos and Deimos.
+                Unforgettable adventures beckon on the rust-colored landscapes
+                of the Red Planet.
               </p>
-              <div>
+              <div class="flight-actions">
                 <div class="btn-group">
                   <div class="tallyCounter">
                     <button class="buttonMin btn">-</button>
@@ -283,16 +456,33 @@
                     <button class="buttonAdd btn">+</button>
                   </div>
                 </div>
-                <a href="#" class="btn btn-primary">Book Now</a>
+                <a
+                  href="#"
+                  class="btn btn-primary bookFlight"
+                  id="marsBookFlight"
+                  >Book Now</a
+                >
               </div>
             </div>
             <div class="divider"></div>
             <div class="flight-extra-info">
-              <ul>
-                <li>SKU :SS001</li>
-                <li>Shuttle :The Opulence</li>
-                <li>Tags :Mars, Luxury, Sale</li>
-                <li>Date :16 June - 19 July</li>
+              <ul class="flight-info">
+                <li>SKU</li>
+                <li>Shuttle</li>
+                <li>Tags</li>
+                <li>Date</li>
+              </ul>
+              <ul class="flight-info2">
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+              </ul>
+              <ul class="flight-info3">
+                <li>SS001</li>
+                <li>The Opulence</li>
+                <li>Mars, Luxury, Sale</li>
+                <li>16 June - 19 July</li>
               </ul>
             </div>
           </div>
@@ -312,6 +502,10 @@
             <div class="flights-list-info">
               <h2 class="246" id="neptuneFLight">Neptune’s Cosmic Dive</h2>
               <p class="price246"><strong>R45,000.00</strong></p>
+              <div class="starReviews">
+                <p class="starRatings">★★★★</p>
+                <p class="reviews">24 Customer Reviews</p>
+              </div>
               <p>
                 Embark on a voyage to Neptune aboard the "Neptune Voyager."
                 Witness surreal vistas of swirling clouds and rings. Experience
@@ -320,7 +514,7 @@
                 cuisine. An unforgettable adventure awaits, blending luxury with
                 cosmic exploration.
               </p>
-              <div>
+              <div class="flight-actions">
                 <div class="btn-group">
                   <div class="tallyCounter">
                     <button class="buttonMin btn blue">-</button>
@@ -333,16 +527,33 @@
                     <button class="buttonAdd btn blue">+</button>
                   </div>
                 </div>
-                <a href="#" class="btn btn-primary">Book Now</a>
+                <a
+                  href="#"
+                  class="btn btn-primary bookFlight"
+                  id="neptuneBookFlight"
+                  >Book Now</a
+                >
               </div>
             </div>
             <div class="divider"></div>
             <div class="flight-extra-info">
-              <ul>
-                <li>SKU :SS001</li>
-                <li>Shuttle :The Opulence</li>
-                <li>Tags :Mars, Luxury, Sale</li>
-                <li>Date :16 June - 19 July</li>
+              <ul class="flight-info">
+                <li>SKU</li>
+                <li>Shuttle</li>
+                <li>Tags</li>
+                <li>Date</li>
+              </ul>
+              <ul class="flight-info2">
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+              </ul>
+              <ul class="flight-info3">
+                <li>SS405</li>
+                <li>The Voyager</li>
+                <li>Neptune, Commercial, Gourmet Experience</li>
+                <li>4 April - 28 March</li>
               </ul>
             </div>
           </div>
@@ -362,6 +573,12 @@
             <div class="flights-list-info">
               <h2 class="title135" id="jupiterFlight">The Giant’s Journey</h2>
               <p class="price135"><strong>R65,000.00</strong></p>
+              <div class="starReviews">
+                <div class="starReviews">
+                  <p class="starRatings">★★★★⯨</p>
+                  <p class="reviews">48 Customer Reviews</p>
+                </div>
+              </div>
               <p>
                 Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness
                 its majestic storms and swirling atmosphere. Dive into metallic
@@ -370,7 +587,7 @@
                 Experience cosmic wonder in luxury, blending exploration with
                 adventure.
               </p>
-              <div>
+              <div class="flight-actions">
                 <div class="btn-group">
                   <div class="tallyCounter">
                     <button class="buttonMin btn">-</button>
@@ -383,16 +600,33 @@
                     <button class="buttonAdd btn">+</button>
                   </div>
                 </div>
-                <a href="#" class="btn btn-primary">Book Now</a>
+                <a
+                  href="#"
+                  class="bookFlight btn btn-primary"
+                  id="jupiterBookFlight"
+                  >Book Now</a
+                >
               </div>
             </div>
             <div class="divider"></div>
             <div class="flight-extra-info">
-              <ul>
-                <li>SKU :SS001</li>
-                <li>Shuttle :The Opulence</li>
-                <li>Tags :Mars, Luxury, Sale</li>
-                <li>Date :16 June - 19 July</li>
+              <ul class="flight-info">
+                <li>SKU</li>
+                <li>Shuttle</li>
+                <li>Tags</li>
+                <li>Date</li>
+              </ul>
+              <ul class="flight-info2">
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+              </ul>
+              <ul class="flight-info3">
+                <li>SS606</li>
+                <li>The Odyssey</li>
+                <li>Jupiter, Luxury, Adventure</li>
+                <li>15 June - 30 July</li>
               </ul>
             </div>
           </div>
@@ -412,6 +646,10 @@
             <div class="flights-list-info">
               <h2 class="title246" id="saturnFlight">Ring Around a Saturn</h2>
               <p class="price246"><strong>R40,000.00</strong></p>
+              <div class="starReviews">
+                <p class="starRatings">★★★★★</p>
+                <p class="reviews">16 Customer Reviews</p>
+              </div>
               <p>
                 Embark on a thrilling voyage to Saturn aboard the "Saturn
                 Explorer." Marvel at its iconic rings and turbulent storms.
@@ -421,7 +659,7 @@
                 luxurious accommodations, where the thrill of discovery
                 intertwines seamlessly with the excitement of adventure.
               </p>
-              <div>
+              <div class="flight-actions">
                 <div class="btn-group">
                   <div class="tallyCounter">
                     <button class="buttonMin btn blue">-</button>
@@ -434,16 +672,33 @@
                     <button class="buttonAdd btn blue">+</button>
                   </div>
                 </div>
-                <a href="#" class="btn btn-primary">Book Now</a>
+                <a
+                  href="#"
+                  class="btn btn-primary bookFlight"
+                  id="saturnBookFlight"
+                  >Book Now</a
+                >
               </div>
             </div>
             <div class="divider"></div>
             <div class="flight-extra-info">
-              <ul>
-                <li>SKU :SS001</li>
-                <li>Shuttle :The Opulence</li>
-                <li>Tags :Mars, Luxury, Sale</li>
-                <li>Date :16 June - 19 July</li>
+              <ul class="flight-info">
+                <li>SKU</li>
+                <li>Shuttle</li>
+                <li>Tags</li>
+                <li>Date</li>
+              </ul>
+              <ul class="flight-info2">
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+              </ul>
+              <ul class="flight-info3">
+                <li>SS333</li>
+                <li>The Explorer</li>
+                <li>Saturn, Luxury, Adventure</li>
+                <li>4 April - 28 March</li>
               </ul>
             </div>
           </div>
@@ -463,6 +718,10 @@
             <div class="flights-list-info">
               <h2 class="title135" id="uranusFlight">Uranus Uncharted</h2>
               <p class="price135"><strong>R50,000.00</strong></p>
+              <div class="starReviews">
+                <p class="starRatings">★★★★⯨</p>
+                <p class="reviews">12 Customer Reviews</p>
+              </div>
               <p>
                 Embark on a cosmic adventure to Uranus with our "Uranus
                 Unveiled" tour. Explore its icy atmosphere and captivating
@@ -472,7 +731,7 @@
                 guides, discover the wonders of Uranus in a journey of a
                 lifetime.
               </p>
-              <div>
+              <div class="flight-actions">
                 <div class="btn-group">
                   <div class="tallyCounter">
                     <button class="buttonMin btn">-</button>
@@ -485,16 +744,33 @@
                     <button class="buttonAdd btn">+</button>
                   </div>
                 </div>
-                <a href="#" class="btn btn-primary">Book Now</a>
+                <a
+                  href="#"
+                  class="btn btn-primary bookFlight"
+                  id="uranusBookFlight"
+                  >Book Now</a
+                >
               </div>
             </div>
             <div class="divider"></div>
             <div class="flight-extra-info">
-              <ul>
-                <li>SKU :SS001</li>
-                <li>Shuttle :The Opulence</li>
-                <li>Tags :Mars, Luxury, Sale</li>
-                <li>Date :16 June - 19 July</li>
+              <ul class="flight-info">
+                <li>SKU</li>
+                <li>Shuttle</li>
+                <li>Tags</li>
+                <li>Date</li>
+              </ul>
+              <ul class="flight-info2">
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+              </ul>
+              <ul class="flight-info3">
+                <li>SS735</li>
+                <li>The Endeavor</li>
+                <li>Uranus, Workshop, Adventure</li>
+                <li>16 May - 19 July</li>
               </ul>
             </div>
           </div>
@@ -514,6 +790,10 @@
             <div class="flights-list-info">
               <h2 class="title246" id="moonFlight">Moonlight Meander</h2>
               <p class="price246"><strong>R15,000.00</strong></p>
+              <div class="starReviews">
+                <p class="starRatings">★★★★</p>
+                <p class="reviews">43 Customer Reviews</p>
+              </div>
               <p>
                 Experience the ultimate lunar getaway with our "Moonlight
                 Meander" package. Depart Earth's atmosphere aboard the
@@ -522,7 +802,7 @@
                 stargazing under the moon's serene glow. Immerse yourself in
                 luxury accommodations amidst the tranquility of space.
               </p>
-              <div>
+              <div class="flight-actions">
                 <div class="btn-group">
                   <div class="tallyCounter">
                     <button class="buttonMin btn blue">-</button>
@@ -535,17 +815,42 @@
                     <button class="buttonAdd btn blue">+</button>
                   </div>
                 </div>
-                <a href="#" class="btn btn-primary">Book Now</a>
+                <a
+                  href="#"
+                  class="btn btn-primary bookFlight"
+                  id="moonBookFlight"
+                  >Book Now</a
+                >
               </div>
             </div>
             <div class="divider"></div>
             <div class="flight-extra-info">
-              <ul>
-                <li>SKU :SS001</li>
-                <li>Shuttle :The Opulence</li>
-                <li>Tags :Mars, Luxury, Sale</li>
-                <li>Date :16 June - 19 July</li>
+              <ul class="flight-info">
+                <li>SKU</li>
+                <li>Shuttle</li>
+                <li>Tags</li>
+                <li>Date</li>
               </ul>
+              <ul class="flight-info2">
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+                <li>:</li>
+              </ul>
+              <ul class="flight-info3">
+                <li>SS451</li>
+                <li>The Voyager</li>
+                <li>Moon, Commercial, Romantic</li>
+                <li>5 August - 12 August</li>
+              </ul>
+            </div>
+            <div class="viewCart">
+              <a
+                href="#"
+                class="btnViewCart btn-primary bookFlight"
+                id="viewCart"
+                >View Cart</a
+              >
             </div>
           </div>
         </div>

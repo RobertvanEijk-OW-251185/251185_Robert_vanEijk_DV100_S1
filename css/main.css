@@ -130,6 +130,22 @@ body {
   height: 24px;
 }
 
+#cartTotalDisplay {
+  position: absolute;
+  translate: -10% 40%;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 30px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 0;
+}
+
 .search-bar .cart-icon .cart-badge {
   position: absolute;
   top: -5px;
@@ -336,6 +352,10 @@ a:active {
   width: 100%;
 }
 
+.carousel-inner {
+  width: 609px;
+}
+
 .carousel-inner img {
   width: 609px;
   height: 649px;
@@ -347,12 +367,13 @@ a:active {
   overflow: hidden;
 }
 
-.carousel-inner img {
-  border-radius: 20px;
+.featuredTTrip {
+  margin-left: 20px !important;
 }
 
 .carousel {
-  width: 150%;
+  width: 609px;
+  height: 649px;
   margin-left: 80px;
 }
 
@@ -400,11 +421,37 @@ p {
   color: #55daeb;
 }
 
+.btnViewCart {
+  background-color: #e51728;
+  padding: 20px;
+  width: 500px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.btnViewCart .btnViewCart:hover {
+  color: #55daeb;
+}
+
+.viewCart {
+  width: 25%;
+  margin-top: 20px;
+  margin-left: 75%;
+}
+
 /* Our Shuttles */
 .shuttle-background {
   background-color: #ffffff;
   width: 100%;
   height: auto;
+}
+
+.ourShuttles {
+  margin-left: 20px;
 }
 
 .shuttles {
@@ -622,15 +669,52 @@ p {
 
 /* Flights */
 
+.starReviews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.starRatings {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  width: 150px;
+  margin-top: 10px;
+  margin-right: 30px;
+  border-right: #3333337e 2px solid;
+}
+
+.reviews {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
 .flights-page {
   background-color: #45016d;
   background-image: none;
 }
 
 .flight-extra-info {
-  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+
   color: #808080;
   margin-left: 2%;
+}
+
+.flight-info {
+  list-style-type: none;
+}
+
+.flight-info2 {
+  list-style-type: none;
+}
+
+.flight-info3 {
+  list-style-type: none;
 }
 
 .card img {
@@ -768,6 +852,8 @@ h4 {
 .flights-pictures {
   width: 609px;
   height: 649px;
+  margin-left: 60px;
+  margin-right: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -783,6 +869,13 @@ h4 {
 .flights-list-section135 {
   background-color: #ffffff;
   padding: 5%;
+}
+
+.flight-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 .title135 {
@@ -933,6 +1026,9 @@ ul li {
 .contact-section {
   padding: 5% 0;
   background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .left-contact-column {
@@ -1098,6 +1194,7 @@ contact-form .btn-primary {
 /* Form PopUp End */
 
 /* Cart PopUp*/
+
 .cart-button {
   font-size: 1.2rem;
   padding: 10px 20px;
@@ -1111,30 +1208,151 @@ contact-form .btn-primary {
 .modal-container {
   display: none;
   position: fixed;
-  top: 0;
+  top: 0%;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
-.modal-container.show {
+.cartH {
+  display: block;
+  position: fixed;
+  background-color: #ffffff;
+  padding-top: 10px;
+  width: 237px;
+  height: 40px;
+}
+
+.cartButtons {
   display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: space-between;
+  margin-top: 200px;
+  position: fixed;
+  background: #fff;
+  width: 235px;
+  height: 9%;
+}
+
+#closeCart {
+  width: 80%;
+  height: 60%;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+#checkoutCart {
+  width: 80%;
+  height: 60%;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+/* cart items hidden visibility */
+.flightProductsCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.cart-item-counter-display {
+  border: none;
+  background: transparent;
+}
+
+.remove-btn {
+  border: none;
+  background: 0;
+  color: #e51728;
+}
+
+.cartCounterDisplayetc {
+  border: 1px solid #58585852;
+  border-radius: 5px;
+}
+
+.flightMars {
+  opacity: 0;
+}
+.flightNeptune {
+  opacity: 0;
+}
+.flightJupiter {
+  opacity: 0;
+}
+.flightSaturn {
+  opacity: 0;
+}
+.flightUranus {
+  opacity: 0;
+}
+.flightMoon {
+  opacity: 0;
+}
+/* cart items visibility */
+.flightMars.showFlightMars {
+  opacity: 1;
+}
+.flightNeptune.showFlightNeptune {
+  opacity: 1;
+}
+.flightJupiter.showFlightJupiter {
+  opacity: 1;
+}
+.flightSaturn.showFlightSaturn {
+  opacity: 1;
+}
+.flightUranus.showFlightUranus {
+  opacity: 1;
+}
+.flightMoon.showFlightMoon {
+  opacity: 1;
 }
 
 .modal-content {
   background: white;
-  padding: 2rem;
+  padding: 0 0 2rem 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px #333;
   max-width: 400px;
   width: 17%;
+  height: 285px;
   text-align: right;
-  top: -304px;
-  left: 563px;
+  top: -260px;
+  left: 565px;
+
+  overflow-x: scroll;
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.cartFLight {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.cartFlightImage {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: auto;
+}
+
+.cartButtons {
+  display: flex;
+  flex-direction: row;
 }
 
 .cartP {
@@ -1164,6 +1382,23 @@ contact-form .btn-primary {
   border-radius: 5px;
   cursor: pointer;
 }
+
+#removeFlightMars {
+  width: 25px;
+}
+
+.cartCounterDisplayetc {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100px;
+  height: 20px;
+}
+
+.cart-item-counter-display {
+  width: 40px;
+}
+
 /* Cart PopUp End */
 
 /* Responsive */
@@ -1203,6 +1438,8 @@ contact-form .btn-primary {
 
 .our-mission {
   padding: 5%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .mission-text {
@@ -1226,24 +1463,31 @@ contact-form .btn-primary {
   }
 
   .carousel {
-    width: 100%;
+    width: 609px;
+    height: 649px;
+    margin: 0;
     margin-bottom: 20px;
     margin-left: 100px;
+    margin-right: 30px;
   }
 
-  carouselSelf {
+  .row .carouselSelf {
     width: 609px;
     height: 649px;
   }
 
-  .carousel-image {
+  .carousel-item {
     width: 609px;
     height: 649px;
   }
 
-  .carousel .col-md-6,
+  .carousel-item img {
+    width: 609px;
+    height: 649px;
+  }
+
   .booking-section {
-    width: 100%;
+    width: 500px;
     padding: 0 15px;
   }
 
